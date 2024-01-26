@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div><a href='#header'>Home</a></div>
+                <div><a href='#about'>About</a></div>
+                <div><a href="#">Portfolio</a></div>
+                <div><a href="#contect">Contect</a></div>
+        </nav>
+        <div class="header-text">
+            <h2 style="color: transparent; -webkit-text-stroke: 1px #03a9f4;">Web Designer</h2>
+            <h1>Hi,I'm <span>ROSHAN</span><span>ROSHAN</span><br> SAINI from India</h1>
+        </div>
+        </div>
+    </div>
+
+    <!-------------about-->
+    <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img  class="image"  src="images/image1.png" style="height: auto; width: 70%;" >
+                <div class="overlay overlayFade">
+                    <p style="margin-top: 65%; margin-left: 34%; color: black; font: bold;">ROSHAN SAINI</p>
+                </div>
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p style="margin-top: 10%;">
+            Currently i am pursuing b.tech in civil enginearing from IIT INDORE and i am a second year student.I have a good experience in web design and worked in many projects. </p>
+            <div class="tab-titles">
+            <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-link"onclick="opentab('experience')">Experience</p>
+            <p class="tab-link"onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li>Html</li>
+                    <li style="margin-top: 2%;">Css</li>
+                    <li style="margin-top: 2%;">Js</li>
+                    <li style="margin-top: 2%;">C++</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li>Portfolio Web Page</li>
+                    <li>Notes Making Chrome Extension</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li> 2022-2026  B.Tech  (iit indore)</li>
+                    <li style="margin-top: 2%;"> 2020-2021  12th</li>
+                    <li style="margin-top: 2%;"> 2018-2019  10th</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--------contect me-->
+   <div id="contect">
+    <div class="row1">
+        <div class="colum1">
+          <h1 style="margin-left: 45%;">Contect Me</h1>
+          <div class="email">
+            <i class="fa-solid fa-envelope" style="font-size: xx-large; margin-top: 4%; margin-left: 45%;"></i>
+            <a class="emailid" style="margin-left: 1%; text-decoration: none;">ce220004038@iiti.ac.in</a>
+          </div>
+          <div class="mobile">
+            <i class="fa-solid fa-phone" style="font-size: xx-large; margin-top: 4%; margin-left: 45%; "></i>
+            <a class="mobileno" style="margin-left: 1%; text-decoration: none;">9571781242</a>
+        </div>
+        <div class="lin">
+        <a href="https://www.instagram.com/roshansaini_9571/?"><i class="fa-brands fa-instagram" style="font-size: xx-large;"></i></a>
+        <a href="https://www.facebook.com/mohit.m.92372446"><i class="fa-brands fa-facebook" style="font-size: xx-large; margin-left: 4%;"></i></a>
+        <a href="https://www.linkedin.com/in/roshan-saini-6a2000260?"><i class="fa-brands fa-linkedin" style="font-size: xx-large; margin-left: 4%;"></i></a>
+        <a><i class="fa-brands fa-twitter" style="font-size: xx-large; margin-left: 4%;"></i></a>
+    </div>
+        </div>
+        <div class="colum2" >
+            <form method="post" name="google-sheet">
+            <input type="text" id="name" name="Name" placeholder=" Your Name" style="height: 50px; width: 70%; border-radius: 9px;background-color:rgb(24, 24, 24); color:rgb(238, 236, 236) ;  ">
+            <input type="text" id="email1" Name="Email1" placeholder=" Your Email" style="height: 50px; width: 70%; border-radius: 9px; background-color:rgb(24, 24, 24);  margin-top: 6%;color:rgb(238, 236, 236) ; ">
+           <p style="margin-top: 8%; margin-bottom: -9%; color:rgb(124, 117, 117);">Your Massage</p>
+            <textarea rows="8"
+            cols="83"
+            Name="Massage"
+            class="blog"
+            style="background-color:rgb(24, 24, 24);  margin-top: 6%; border-radius: 9px; color:rgb(238, 236, 236) ; float: left;
+            width: 70%;
+            margin-top: 9%; ">
+  </textarea>
+  <button  class="glow-on-hover"  type="submit" style="font-size: xx-large; margin-top: 6%; background-color: rgb(37, 36, 36);  margin-right: 30%; margin-bottom: 50px;">Submit</button>
+</form>
+    </div>
+   </div>
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-link");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw8S9etCpnVX7T40HMp7MBIH-D7y8DgwgkJDaNQm6j62FEZZQgw2XrfYNXq6SU9xELY/exec'
+        const form=document.forms['google-sheet']
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'post', body: new FormData(form)})
+            .then(response => alert("Your Responce has been submited"))
+            .catch(error => console.error('Error!',error.massage))})
+     </script>
+</body>
+</html>
